@@ -1,0 +1,7 @@
+services:
+  my_store_locator.embed_builder:
+    class: Drupal\my_store_locator\MapEmbedBuilder
+    arguments: ['@config.factory', '@language_manager', '@current_user']
+  my_store_locator.connect:
+    class: Drupal\my_store_locator\ConnectButton
+    arguments: ['@extension.path.resolver', '@file_url_generator']

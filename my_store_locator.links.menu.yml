@@ -1,0 +1,5 @@
+my_store_locator.settings:
+  title: 'My Store Locator'
+  description: 'Default map token and display settings for store finder maps.'
+  route_name: my_store_locator.settings
+  parent: system.admin_config_services

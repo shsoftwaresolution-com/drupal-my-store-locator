@@ -1,0 +1,39 @@
+# The hosted widget of the My Store Locator app, for maps WITHOUT consent mode.
+# Loaded once per page (Drupal de-duplicates libraries); it mounts every element
+# with [data-mystorelocator].
+widget:
+  remote: https://my-store-locator.com
+  version: 1.x
+  license:
+    name: Proprietary (hosted service)
+    url: https://my-store-locator.com/en/privacy/
+    gpl-compatible: false
+  js:
+    https://app.my-store-locator.com/widget.js:
+      type: external
+      minified: true
+      preprocess: false
+      attributes:
+        async: true
+        id: msl-widget-js
+
+# Strict two-click consent (local file, no external request): for maps WITH
+# consent mode. widget.js is injected only after the visitor clicks
+# "Karte laden" / "Load map".
+consent:
+  version: VERSION
+  js:
+    js/msl-consent.js: {}
+
+# Admin only: the "Connect with My Store Locator" button.
+connect:
+  version: VERSION
+  js:
+    js/connect.js: {}
+  css:
+    component:
+      css/connect.css: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/once

@@ -1,0 +1,4 @@
+administer my store locator:
+  title: 'Administer My Store Locator'
+  description: 'Change the default map token and display settings of My Store Locator maps.'
+  restrict access: true

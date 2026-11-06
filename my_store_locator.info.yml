@@ -1,0 +1,8 @@
+name: 'My Store Locator'
+type: module
+description: 'Embeds a My Store Locator store finder map (my-store-locator.com) as a block, with a GDPR click-to-load consent mode.'
+package: 'Web services'
+core_version_requirement: ^10 || ^11
+configure: my_store_locator.settings
+'interface translation project': my_store_locator
+'interface translation server pattern': modules/contrib/my_store_locator/translations/%project.%language.po

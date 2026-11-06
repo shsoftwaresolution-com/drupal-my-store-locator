@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a My Store Locator map.
+ *
+ * Without consent mode, the widget (app.my-store-locator.com/widget.js)
+ * mounts the container (data-mystorelocator) and replaces its content with
+ * the map. With consent mode, the container is a "gate" without the widget
+ * markers: js/msl-consent.js (local) turns it into a widget container and
+ * injects widget.js only after the visitor clicks the button, so nothing is
+ * requested from app.my-store-locator.com before that.
+ *
+ * Available variables:
+ * - attributes: HTML attributes of the map container (a unique id,
+ *   data-token, data-height, data-lang, the optional data-lazy, data-offset,
+ *   data-layout; class "msl-map" + data-mystorelocator, or with consent mode
+ *   class "msl-map-consent" + data-msl-gate).
+ * - token: the map token.
+ * - consent: TRUE when the click-to-load placeholder is rendered.
+ * - placeholder_height: CSS height of the placeholder.
+ * - consent_text: privacy notice of the placeholder (map language).
+ * - consent_button: label of the load button (map language).
+ *
+ * @ingroup themeable
+ */
+#}
+{% if consent %}
+<div{{ attributes }}><div class="msl-consent" style="height:{{ placeholder_height }};display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#f6f7f9;border-radius:12px;font:14px system-ui;text-align:center;padding:24px;box-sizing:border-box"><p style="max-width:420px;margin:0;color:#475467">{{ consent_text }}</p><button type="button" class="msl-consent__load" style="background:#5b55d9;color:#fff;border:0;border-radius:10px;padding:10px 18px;font-weight:600;cursor:pointer">{{ consent_button }}</button></div><noscript>{{ 'Please enable JavaScript to see the store map.'|t }}</noscript></div>
+{% else %}
+<div{{ attributes }}><noscript>{{ 'Please enable JavaScript to see the store map.'|t }}</noscript></div>
+{% endif %}

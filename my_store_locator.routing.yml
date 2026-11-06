@@ -1,0 +1,7 @@
+my_store_locator.settings:
+  path: '/admin/config/services/my-store-locator'
+  defaults:
+    _form: '\Drupal\my_store_locator\Form\SettingsForm'
+    _title: 'My Store Locator'
+  requirements:
+    _permission: 'administer my store locator'

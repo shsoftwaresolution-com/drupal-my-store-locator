@@ -1,0 +1,51 @@
+my_store_locator.settings:
+  type: config_object
+  label: 'My Store Locator settings'
+  mapping:
+    token:
+      type: string
+      label: 'Default map token'
+    height:
+      type: string
+      label: 'Height (auto or CSS length)'
+    lang:
+      type: string
+      label: 'Language (auto, de, en)'
+    consent:
+      type: boolean
+      label: 'Consent mode (click to load)'
+    lazy:
+      type: boolean
+      label: 'Lazy loading'
+    offset:
+      type: integer
+      label: 'Sticky header offset in px'
+    layout:
+      type: string
+      label: 'Layout (default, split)'
+
+block.settings.my_store_locator_map:
+  type: block_settings
+  label: 'My Store Locator map block'
+  mapping:
+    token:
+      type: string
+      label: 'Map token (empty = default)'
+    height:
+      type: string
+      label: 'Height (empty = default)'
+    lang:
+      type: string
+      label: 'Language (empty = default)'
+    consent:
+      type: string
+      label: 'Consent mode (empty = default, 1 = on, 0 = off)'
+    lazy:
+      type: string
+      label: 'Lazy loading (empty = default, 1 = on, 0 = off)'
+    offset:
+      type: string
+      label: 'Sticky header offset in px (empty = default)'
+    layout:
+      type: string
+      label: 'Layout (empty = default, default, split)'

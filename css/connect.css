@@ -1,0 +1,12 @@
+.msl-connect {
+  margin: 0.25rem 0 1.25rem;
+}
+.msl-connect-status {
+  margin-inline-start: 0.75rem;
+}
+.msl-connect-status.is-ok {
+  color: #1f7a3a;
+}
+.msl-connect-status.is-error {
+  color: #b42318;
+}

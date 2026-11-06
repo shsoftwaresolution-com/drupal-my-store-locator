@@ -1,0 +1,173 @@
+# German translation of My Store Locator (Drupal module).
+# Copyright (C) 2026 SH Software Solution (Internet am Dornbusch)
+# This file is distributed under the same license as the module (GPL-2.0-or-later).
+msgid ""
+msgstr ""
+"Project-Id-Version: my_store_locator 1.0.x\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Connect with My Store Locator"
+msgstr "Mit My Store Locator verbinden"
+
+msgid "No account yet? <a href=\":signup\" target=\"_blank\" rel=\"noopener\">Create a free My Store Locator account</a>, add your locations and copy the map token from \"Embed\"."
+msgstr "Noch kein Konto? <a href=\":signup\" target=\"_blank\" rel=\"noopener\">Kostenloses My-Store-Locator-Konto anlegen</a>, Standorte eintragen und den Karten-Token unter „Einbinden“ kopieren."
+
+msgid "My Store Locator: no valid map token is set. Add it in the block settings or on the <a href=\":url\">settings page</a>. Visitors do not see this message."
+msgstr "My Store Locator: Es ist kein gültiger Karten-Token hinterlegt. Tragen Sie ihn in den Block-Einstellungen oder auf der <a href=\":url\">Einstellungsseite</a> ein. Besucher sehen diesen Hinweis nicht."
+
+msgid "My Store Locator map"
+msgstr "My-Store-Locator-Karte"
+
+msgid "My Store Locator"
+msgstr "My Store Locator"
+
+msgid "Empty fields use the defaults of the <a href=\":url\">My Store Locator settings</a>."
+msgstr "Leere Felder verwenden die Standardwerte aus den <a href=\":url\">My-Store-Locator-Einstellungen</a>."
+
+msgid "Show your <a href=\":site\" target=\"_blank\" rel=\"noopener\">My Store Locator</a> map on this site: connect your account (or paste the map token), then place the block \"My Store Locator map\" in a region on the <a href=\":blocks\">block layout</a> page. These settings are the defaults for every map block."
+msgstr "Zeigen Sie Ihre <a href=\":site\" target=\"_blank\" rel=\"noopener\">My-Store-Locator</a>-Karte auf dieser Website: Konto verbinden (oder Karten-Token einfügen) und dann auf der Seite <a href=\":blocks\">Blocklayout</a> den Block „My-Store-Locator-Karte“ in einen Bereich setzen. Diese Einstellungen gelten als Standard für jeden Karten-Block."
+
+msgid "Privacy"
+msgstr "Datenschutz"
+
+msgid "The map is loaded from app.my-store-locator.com (hosted in Germany). When it loads, the visitor's browser sends its IP address to that server. With consent mode nothing is loaded from that server before the visitor clicks. This module itself stores no visitor data and sends nothing anywhere. Mention the service in your privacy policy: <a href=\":de\" target=\"_blank\" rel=\"noopener\">Datenschutz (German)</a>, <a href=\":en\" target=\"_blank\" rel=\"noopener\">Privacy policy (English)</a>."
+msgstr "Die Karte wird von app.my-store-locator.com geladen (Hosting in Deutschland). Beim Laden überträgt der Browser des Besuchers dessen IP-Adresse an diesen Server. Im Einwilligungsmodus wird vor dem Klick des Besuchers nichts von diesem Server geladen. Das Modul selbst speichert keine Besucherdaten und sendet nichts. Nennen Sie den Dienst in Ihrer Datenschutzerklärung: <a href=\":de\" target=\"_blank\" rel=\"noopener\">Datenschutz (Deutsch)</a>, <a href=\":en\" target=\"_blank\" rel=\"noopener\">Privacy policy (Englisch)</a>."
+
+msgid "on"
+msgstr "an"
+
+msgid "off"
+msgstr "aus"
+
+msgid "Default (@value)"
+msgstr "Standard (@value)"
+
+msgid "Site language (German for de*, otherwise English)"
+msgstr "Sprache der Website (Deutsch bei de*, sonst Englisch)"
+
+msgid "German"
+msgstr "Deutsch"
+
+msgid "English"
+msgstr "Englisch"
+
+msgid "As set in the app"
+msgstr "Wie in der App eingestellt"
+
+msgid "Split (finder template: list scrolls with the page, map stays in view)"
+msgstr "Geteilt (Finder-Vorlage: Liste läuft mit der Seite, Karte bleibt sichtbar)"
+
+msgid "Map token"
+msgstr "Karten-Token"
+
+msgid "Default map token"
+msgstr "Standard-Karten-Token"
+
+msgid "Leave empty to use the default map token from the settings page. You can paste the token, the embed code or the public map URL."
+msgstr "Leer lassen, um den Standard-Karten-Token der Einstellungsseite zu verwenden. Sie können den Token, den Einbettungscode oder die öffentliche Karten-URL einfügen."
+
+msgid "Paste the map token, the embed code (iframe or widget) or the public map URL (…/#/m/&lt;token&gt;). You find it in the app under \"Embed\"."
+msgstr "Fügen Sie den Karten-Token, den Einbettungscode (iframe oder Widget) oder die öffentliche Karten-URL (…/#/m/&lt;token&gt;) ein. Sie finden ihn in der App unter „Einbinden“."
+
+msgid "Height"
+msgstr "Höhe"
+
+msgid "\"auto\" lets the map grow with its content (the page scrolls), or a fixed height such as 640px or 80vh."
+msgstr "„auto“ lässt die Karte mit ihrem Inhalt wachsen (die Seite scrollt), oder eine feste Höhe wie 640px oder 80vh."
+
+msgid "Leave empty to use the default."
+msgstr "Leer lassen, um den Standardwert zu verwenden."
+
+msgid "Language"
+msgstr "Sprache"
+
+msgid "Consent mode (click to load)"
+msgstr "Einwilligungsmodus (Laden per Klick)"
+
+msgid "Lazy loading"
+msgstr "Verzögertes Laden"
+
+msgid "Recommended (GDPR): visitors first see a notice and the map loads only after they click \"Karte laden\". Without consent mode, the map loads from app.my-store-locator.com right away."
+msgstr "Empfohlen (DSGVO): Besucher sehen zuerst einen Hinweis, die Karte lädt erst nach einem Klick auf „Karte laden“. Ohne Einwilligungsmodus lädt die Karte sofort von app.my-store-locator.com."
+
+msgid "The browser loads the map only when it comes close to the visible area."
+msgstr "Der Browser lädt die Karte erst, wenn sie in die Nähe des sichtbaren Bereichs kommt."
+
+msgid "Sticky header offset"
+msgstr "Abstand für festen Header"
+
+msgid "Height of a fixed (sticky) header of your theme, so that the map stays below it. 0 = none."
+msgstr "Höhe eines festen (sticky) Headers Ihres Themes, damit die Karte darunter bleibt. 0 = keiner."
+
+msgid "Layout"
+msgstr "Layout"
+
+msgid "\"Split\" only applies with height \"auto\" and the finder template."
+msgstr "„Geteilt“ wirkt nur mit der Höhe „auto“ und der Finder-Vorlage."
+
+msgid "No valid map token found. Paste the token (6–64 letters, digits, \"-\" or \"_\"), the embed code or the public map URL."
+msgstr "Kein gültiger Karten-Token gefunden. Fügen Sie den Token (6–64 Buchstaben, Ziffern, „-“ oder „_“), den Einbettungscode oder die öffentliche Karten-URL ein."
+
+msgid "Enter \"auto\" or a height such as 640px, 80vh or 40rem."
+msgstr "Geben Sie „auto“ oder eine Höhe wie 640px, 80vh oder 40rem ein."
+
+msgid "About"
+msgstr "Über"
+
+msgid "My Store Locator shows your store finder map from <a href=\":site\" target=\"_blank\" rel=\"noopener\">my-store-locator.com</a> on your site. You manage your locations, the look and the template in the My Store Locator app; this module only embeds the map."
+msgstr "My Store Locator zeigt Ihre Standortkarte von <a href=\":site\" target=\"_blank\" rel=\"noopener\">my-store-locator.com</a> auf Ihrer Website. Standorte, Aussehen und Vorlage verwalten Sie in der My-Store-Locator-App; dieses Modul bindet nur die Karte ein."
+
+msgid "Uses"
+msgstr "Verwendung"
+
+msgid "<a href=\":signup\" target=\"_blank\" rel=\"noopener\">Create a free account</a> and add your locations."
+msgstr "<a href=\":signup\" target=\"_blank\" rel=\"noopener\">Kostenloses Konto anlegen</a> und Standorte eintragen."
+
+msgid "On the <a href=\":settings\">settings page</a>, click \"Connect with My Store Locator\" or paste the map token, the embed code or the public map URL."
+msgstr "Auf der <a href=\":settings\">Einstellungsseite</a> auf „Mit My Store Locator verbinden“ klicken oder den Karten-Token, den Einbettungscode oder die öffentliche Karten-URL einfügen."
+
+msgid "Place the block \"My Store Locator map\" in a region on the <a href=\":blocks\">block layout</a> page. Each block can use its own map token and display settings."
+msgstr "Den Block „My-Store-Locator-Karte“ auf der Seite <a href=\":blocks\">Blocklayout</a> in einen Bereich setzen. Jeder Block kann einen eigenen Karten-Token und eigene Anzeige-Einstellungen haben."
+
+msgid "The map is loaded from app.my-store-locator.com (hosted in Germany); the visitor's IP address is sent to that server when the map loads. With consent mode (default) the map loads only after the visitor clicks. See <a href=\":de\" target=\"_blank\" rel=\"noopener\">Datenschutz</a> / <a href=\":en\" target=\"_blank\" rel=\"noopener\">Privacy policy</a>."
+msgstr "Die Karte wird von app.my-store-locator.com geladen (Hosting in Deutschland); beim Laden wird die IP-Adresse des Besuchers an diesen Server übertragen. Im Einwilligungsmodus (Standard) lädt die Karte erst nach einem Klick des Besuchers. Siehe <a href=\":de\" target=\"_blank\" rel=\"noopener\">Datenschutz</a> / <a href=\":en\" target=\"_blank\" rel=\"noopener\">Privacy policy</a>."
+
+msgid "The connection could not be verified. Please try again or paste the map token."
+msgstr "Die Verbindung konnte nicht bestätigt werden. Bitte erneut versuchen oder den Karten-Token einfügen."
+
+msgid "Map \"@map\" connected. Save to apply."
+msgstr "Karte „@map“ verbunden. Zum Übernehmen speichern."
+
+msgid "Map connected. Save to apply."
+msgstr "Karte verbunden. Zum Übernehmen speichern."
+
+msgid "The popup was blocked. Allow popups for this site or paste the map token."
+msgstr "Das Popup wurde blockiert. Erlauben Sie Popups für diese Website oder fügen Sie den Karten-Token ein."
+
+msgid "Waiting for My Store Locator …"
+msgstr "Warte auf My Store Locator …"
+
+msgid "Please enable JavaScript to see the store map."
+msgstr "Bitte aktivieren Sie JavaScript, um die Standortkarte zu sehen."
+
+msgid "Embeds a My Store Locator store finder map (my-store-locator.com) as a block, with a GDPR click-to-load consent mode."
+msgstr "Bindet eine Standortkarte von My Store Locator (my-store-locator.com) als Block ein, mit DSGVO-Einwilligungsmodus (Laden per Klick)."
+
+msgid "Administer My Store Locator"
+msgstr "My Store Locator verwalten"
+
+msgid "Change the default map token and display settings of My Store Locator maps."
+msgstr "Standard-Karten-Token und Anzeige-Einstellungen der My-Store-Locator-Karten ändern."
+
+msgid "Default map token and display settings for store finder maps."
+msgstr "Standard-Karten-Token und Anzeige-Einstellungen für Standortkarten."
+
+msgid "This map is loaded from my-store-locator.com (own map server in Germany). Your IP address is transferred to this server."
+msgstr "Diese Karte wird von my-store-locator.com geladen (eigener Kartenserver in Deutschland). Dabei wird Ihre IP-Adresse an diesen Server übertragen."
+
+msgid "Load map"
+msgstr "Karte laden"

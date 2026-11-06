@@ -1,0 +1,22 @@
+{
+    "name": "drupal/my_store_locator",
+    "type": "drupal-module",
+    "description": "Embeds a My Store Locator store finder map (my-store-locator.com) as a block, with a GDPR click-to-load consent mode.",
+    "keywords": ["Drupal", "store locator", "store finder", "map", "locations", "GDPR"],
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/my_store_locator",
+    "authors": [
+        {
+            "name": "SH Software Solution (Internet am Dornbusch)",
+            "homepage": "https://my-store-locator.com/?utm_source=drupal&utm_medium=integration&utm_campaign=drupal-plugin",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/my_store_locator",
+        "source": "https://git.drupalcode.org/project/my_store_locator"
+    },
+    "require": {
+        "php": ">=8.1"
+    }
+}

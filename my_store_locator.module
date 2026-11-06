@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Embeds My Store Locator store finder maps (my-store-locator.com).
+ */
+
+declare(strict_types=1);
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function my_store_locator_help($route_name, RouteMatchInterface $route_match) {
+  if ($route_name !== 'help.page.my_store_locator') {
+    return NULL;
+  }
+  $output = '<h2>' . t('About') . '</h2>';
+  $output .= '<p>' . t('My Store Locator shows your store finder map from <a href=":site" target="_blank" rel="noopener">my-store-locator.com</a> on your site. You manage your locations, the look and the template in the My Store Locator app; this module only embeds the map.', [
+    ':site' => 'https://my-store-locator.com/en/?utm_source=drupal&utm_medium=integration&utm_campaign=drupal-plugin',
+  ]) . '</p>';
+  $output .= '<h2>' . t('Uses') . '</h2><ol>';
+  $output .= '<li>' . t('<a href=":signup" target="_blank" rel="noopener">Create a free account</a> and add your locations.', [
+    ':signup' => 'https://app.my-store-locator.com/#/register?utm_source=drupal',
+  ]) . '</li>';
+  $output .= '<li>' . t('On the <a href=":settings">settings page</a>, click "Connect with My Store Locator" or paste the map token, the embed code or the public map URL.', [
+    ':settings' => Url::fromRoute('my_store_locator.settings')->toString(),
+  ]) . '</li>';
+  $output .= '<li>' . t('Place the block "My Store Locator map" in a region on the <a href=":blocks">block layout</a> page. Each block can use its own map token and display settings.', [
+    ':blocks' => Url::fromRoute('block.admin_display')->toString(),
+  ]) . '</li></ol>';
+  $output .= '<h2>' . t('Privacy') . '</h2>';
+  $output .= '<p>' . t('The map is loaded from app.my-store-locator.com (hosted in Germany); the visitor\'s IP address is sent to that server when the map loads. With consent mode (default) the map loads only after the visitor clicks. See <a href=":de" target="_blank" rel="noopener">Datenschutz</a> / <a href=":en" target="_blank" rel="noopener">Privacy policy</a>.', [
+    ':de' => 'https://my-store-locator.com/datenschutz/',
+    ':en' => 'https://my-store-locator.com/en/privacy/',
+  ]) . '</p>';
+  return $output;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function my_store_locator_theme() {
+  return [
+    'my_store_locator_map' => [
+      'variables' => [
+        'attributes' => [],
+        'token' => NULL,
+        'consent' => FALSE,
+        'placeholder_height' => NULL,
+        'consent_text' => NULL,
+        'consent_button' => NULL,
+      ],
+    ],
+  ];
+}
